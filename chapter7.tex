@@ -156,6 +156,19 @@ From the above relations it turns out that,
 
 %---------------------------Subsection 7 ---------------- %
 %-------------------------------------------------------- %
+\subsection{Triple Angle Formulae}
+\begin{align*}
+\sin(3x) &= 3\sin(x) - 4\sin^3(x) \\
+\cos(3x) &= 4\cos^3(x) - 3\cos(x) \\
+\tan(3x) &= \frac{3\tan(x) - \tan^3(x)}{1-3\tan^2(x)}\\
+\sin(4x) &= 4\sin(x)\cos(x) - 8\sin^3(x)\cos(x)\\
+\tan(4x) &= \frac{4\tan(x)-4\tan^3(x)}{1-6\tan^2(x)+\tan^4(x)}\\
+\cos(4x) &= 8\cos^4(x) - 8\cos^2(x) + 1
+\end{align*}
+
+%---------------------------Subsection 8 ---------------- %
+%-------------------------------------------------------- %
+
 \subsection{Product Formulae}
 \textit{If $A+B = C$ and $A-B = D$}\\
 \textit{Then $A = (C+D)/2$ and $B = (C-D)/2$, the product formulae are defined as}
@@ -167,97 +180,3 @@ From the above relations it turns out that,
 \cos(C) - \cos(D) &= -2\sin\frac{(C+D)}{2}\sin\frac{(C-D)}{2}
 \end{align*}
 
-%---------------------------Subsection 8 ---------------- %
-%-------------------------------------------------------- %
-\subsection{Hyperbolic Functions}
-\begin{align*}
-\sinh(x) &= \frac{e^x - e^-x}{2} \hspace{20mm} \mathrm{cosech(x)} = \frac{2}{e^x - e^-x}\\
-\cosh(x) &= \frac{e^x + e^-x}{2} \hspace{20mm} \mathrm{sech(x)} = \frac{2}{e^x + e^-x}\\
-\tanh(x) &= \frac{e^x - e^-x}{e^x + e^-x} \hspace{20mm} \coth(x) = \frac{e^x + e^-x}{e^x - e^-x}
-\end{align*}
-
-%---------------------------Subsection 9 ---------------- %
-%-------------------------------------------------------- %
-\subsection{Properties of Hyperbolic Functions}
-\begin{align*}
-\cosh^2(x) - \sinh^2(x) &= 1\\
-\cosh^2(x) + \sinh^2(x) &= \cosh(2x)\\
-1 - \tanh^2(x) &= \mathrm{sech}^2(x)\\
-\coth^2(x) - 1 &= \mathrm{cosech}^2(x)\\
-\sinh(2x) &= 2\sinh(x)\cosh(x)\\
-\sin(ix) &= \frac{e^{ix} - e^{-ix}}{2}\\
-\cos(ix) &= \frac{e^{ix} + e^{-ix}}{2}\\
-\sin(ix) &= i\sinh(x)\\
-\cos(ix) &= \cosh(x)\\
-\tan(ix) &= i\tanh(x)
-\end{align*}
-
-%---------------------------Subsection 10 -------
-%-------------------------------------------------------- %
-\subsection{Inverse Trigonometric Functions}
-If \textit{$x = \sin\theta$} then we define the inverse trigonometric function as \textit{$\sin^{-1}(x) = \theta$}, the same holds true for all other trigonometric functions.
-
-\subsubsection{Properties of Inverse Trigonometric Functions}
-
-\begin{align*}
-\hspace{20mm} \sin^{-1}(\sin\theta) &= \theta  \hspace{20mm} \mathrm{cosec}^{-1}(\mathrm{cosec}\theta) = \theta\\
-\hspace{20mm} \cos^{-1}(\cos\theta) &= \theta  \hspace{20mm} \mathrm{sec}^{-1}(\mathrm{sec}\theta) = \theta\\ 
-\hspace{20mm} \tan^{-1}(\tan\theta) &= \theta \hspace{20mm} \cot^{-1}(\cot\theta) = \theta \\ \\
-\hspace{20mm} \sin(\sin^{-1}(x)) &= x  \hspace{20mm} \mathrm{cosec}(\mathrm{cosec}^{-1}(x)) = x\\
-\hspace{20mm} \cos(\cos^{-1}(x)) &= x  \hspace{20mm} \mathrm{sec}(\mathrm{sec}^{-1}(x)) = x\\ 
-\hspace{20mm} \tan(\tan^{-1}(x)) &= x \hspace{20mm} \cot(\cot^{-1}(x)) = x 
-\end{align*}
-
-\begin{figure}[ht]
-    \centering
-    \includegraphics{inverse_trigonometry}
-    \caption{Domain and range of inverse trigonometric functions}
-    \label{inverse_trig}
-\end{figure}
-
-\begin{align*}
-\hspace{20mm} \sin^{-1}(x) \hspace{5mm} &= \hspace{5mm} \cos^{-1}\sqrt{1-x^2} \hspace{5mm} = \hspace{5mm}  \tan^{-1}\frac{x}{\sqrt{1-x^2}}\\
-\hspace{20mm} \cos^{-1}(x) \hspace{5mm} &= \hspace{5mm} \sin^{-1}\sqrt{1-x^2} \hspace{5mm} = \hspace{5mm}  \tan^{-1}\frac{\sqrt{1-x^2}}{x}\\
-\hspace{20mm} \tan^{-1}(x) \hspace{5mm} &= \hspace{5mm} \sin^{-1}\frac{x}{\sqrt{1+x^2}} \hspace{5mm} = \hspace{5mm}  \cos^{-1}\frac{1}{\sqrt{1+x^2}}
-\end{align*}
-
-\begin{align*}
-\hspace{20mm} \sin^{-1}(-x)  \hspace{5mm} &= \hspace{5mm} -\sin^{-1}(x) \hspace{5mm} x \in [-1,1] \\
-\hspace{20mm} \cos^{-1}(-x)  \hspace{5mm} &= \hspace{5mm} \pi - \cos^{-1}(x) \hspace{5mm} x \in [-1,1] \\
-\hspace{20mm} \tan^{-1}(-x)  \hspace{5mm} &= \hspace{5mm} -\tan^{-1}(x) \hspace{5mm} x \in \mathrm{R} \\
-\hspace{20mm} \mathrm{cosec}^{-1}(-x)  \hspace{5mm} &= \hspace{5mm} -\mathrm{cosec}^{-1}(x) \hspace{5mm} x \in (-\infty,-1] \cup [1,\infty)\\
-\hspace{20mm} \mathrm{sec}^{-1}(-x)  \hspace{5mm} &= \hspace{5mm} \pi-\mathrm{sec}^{-1}(x) \hspace{5mm} x \in (-\infty,-1] \cup [1,\infty)\\
-\hspace{20mm} \cot^{-1}(-x)  \hspace{5mm} &= \hspace{5mm} \pi -\cot^{-1}(x) \hspace{5mm} x \in \mathrm{R} \\ \\
-\hspace{20mm} \sin^{-1}(\frac{1}{x})  \hspace{5mm} &= \hspace{5mm} \mathrm{cosec}^{-1}(x) \hspace{5mm} x \in (-\infty,-1] \cup [1,\infty)\\
-\hspace{20mm} \cos^{-1}(\frac{1}{x})  \hspace{5mm} &= \hspace{5mm} \mathrm{sec}^{-1}(x) \hspace{5mm} x \in (-\infty,-1] \cup [1,\infty)\\
-\tan^{-1}(1/x) \hspace{5mm} &= \hspace{5mm}
-\begin{cases}
-\cot^{-1}(x), \hspace{5mm}   x > 0 \\
-\cot^{-1}(x) - \pi, \hspace{5mm} x < 0\\
-\end{cases}
-\end{align*} 
-
-
-\begin{align*}
-\hspace{20mm} \sin^{-1}(x) \hspace{5mm} &+ \hspace{5mm} \cos^{-1}(x) \hspace{5mm} = \hspace{5mm} (\pi/2)\\
-\hspace{20mm} \tan^{-1}(x) \hspace{5mm} &+ \hspace{5mm} \cot^{-1}(x) \hspace{5mm}  = \hspace{5mm} (\pi/2)\\
-\hspace{20mm} \sec^{-1}(x) \hspace{5mm} &+ \hspace{5mm} \mathrm{cosec}^{-1}(x) \hspace{5mm} = \hspace{5mm} (\pi/2) \\ \\
-\hspace{20mm} \tan^{-1}(x) \hspace{5mm} &+ \hspace{5mm} \tan^{-1}(y) \hspace{5mm} = \hspace{5mm} \tan^{-1}\frac{x+y}{1-xy}\\
-\hspace{20mm} \tan^{-1}(x) \hspace{5mm} &- \hspace{5mm} \tan^{-1}(y) \hspace{5mm} = \hspace{5mm} \tan^{-1}\frac{x-y}{1+xy}\\
-\hspace{20mm} 2\tan^{-1}(x) \hspace{5mm} &= \hspace{5mm} 
-\begin{cases}
-2\sin^{-1}\frac{2x}{1+x^2}, \hspace{5mm}   x > 0 \\
-\cos^{-1}\frac{1-x^2}{1+x^2}, \hspace{5mm} x < 0\\
-\end{cases}
-\end{align*}
-
-\subsection{Expressions and suggested substitutions}
-\hspace{45mm} \textbf{Expression} \hspace{30mm} \textbf{Substitution} \hspace{10mm}
-
-\begin{align*}
-\hspace{30mm} a^2 &+ x^2 \hspace{20mm} x=a\tan\theta \hspace{5mm} or \hspace{5mm} x=a\cot\theta\\
-\hspace{30mm} a^2 &- x^2 \hspace{20mm} x=a\sin\theta \hspace{5mm} or \hspace{5mm} x=a\cos\theta\\
-\hspace{30mm} x^2 &- a^2 \hspace{20mm} x=a \mathrm{cosec}\theta \hspace{3mm} or \hspace{5mm} x=a\sec\theta \\
-\hspace{25mm}\sqrt{\frac{a-x}{a+x}} \hspace{3mm} & or \hspace{3mm}\sqrt{\frac{a+x}{a-x}} \hspace{8mm} x=a\cos2\theta \hspace{5mm}\\
-\hspace{25mm}\sqrt{\frac{a^2-x^2}{a^2+x^2}} \hspace{3mm} & or \hspace{3mm}\sqrt{\frac{a^2+x^2}{a^2-x^2}} \hspace{6mm} x=a^2\cos2\theta \hspace{5mm}
-\end{align*}
