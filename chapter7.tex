@@ -192,12 +192,7 @@ From the above relations it turns out that,
 \tan(ix) &= i\tanh(x)
 \end{align*}
 
-%---------------------------Subsection 10 ---------------- %\sin^{-1}(\sin\theta)  
-%\mathrm{cosec}^{-1}(\mathrm{cosec}\theta)
-%\cos^{-1}(\cos\theta)
-%\mathrm{sec}^{-1}(\mathrm{sec}\theta)
-%\tan^{-1}(\tan\theta)
-%\cot^{-1}(\cot\theta)
+%---------------------------Subsection 10 -------
 %-------------------------------------------------------- %
 \subsection{Inverse Trigonometric Functions}
 If \textit{$x = \sin\theta$} then we define the inverse trigonometric function as \textit{$\sin^{-1}(x) = \theta$}, the same holds true for all other trigonometric functions.
@@ -238,6 +233,31 @@ If \textit{$x = \sin\theta$} then we define the inverse trigonometric function a
 \tan^{-1}(1/x) \hspace{5mm} &= \hspace{5mm}
 \begin{cases}
 \cot^{-1}(x), \hspace{5mm}   x > 0 \\
-\cot^{-1}(x) - \pi, \hspace{5mm} x < 0 \\
+\cot^{-1}(x) - \pi, \hspace{5mm} x < 0\\
 \end{cases}
 \end{align*} 
+
+
+\begin{align*}
+\hspace{20mm} \sin^{-1}(x) \hspace{5mm} &+ \hspace{5mm} \cos^{-1}(x) \hspace{5mm} = \hspace{5mm} (\pi/2)\\
+\hspace{20mm} \tan^{-1}(x) \hspace{5mm} &+ \hspace{5mm} \cot^{-1}(x) \hspace{5mm}  = \hspace{5mm} (\pi/2)\\
+\hspace{20mm} \sec^{-1}(x) \hspace{5mm} &+ \hspace{5mm} \mathrm{cosec}^{-1}(x) \hspace{5mm} = \hspace{5mm} (\pi/2) \\ \\
+\hspace{20mm} \tan^{-1}(x) \hspace{5mm} &+ \hspace{5mm} \tan^{-1}(y) \hspace{5mm} = \hspace{5mm} \tan^{-1}\frac{x+y}{1-xy}\\
+\hspace{20mm} \tan^{-1}(x) \hspace{5mm} &- \hspace{5mm} \tan^{-1}(y) \hspace{5mm} = \hspace{5mm} \tan^{-1}\frac{x-y}{1+xy}\\
+\hspace{20mm} 2\tan^{-1}(x) \hspace{5mm} &= \hspace{5mm} 
+\begin{cases}
+2\sin^{-1}\frac{2x}{1+x^2}, \hspace{5mm}   x > 0 \\
+\cos^{-1}\frac{1-x^2}{1+x^2}, \hspace{5mm} x < 0\\
+\end{cases}
+\end{align*}
+
+\subsection{Expressions and suggested substitutions}
+\hspace{45mm} \textbf{Expression} \hspace{30mm} \textbf{Substitution} \hspace{10mm}
+
+\begin{align*}
+\hspace{30mm} a^2 &+ x^2 \hspace{20mm} x=a\tan\theta \hspace{5mm} or \hspace{5mm} x=a\cot\theta\\
+\hspace{30mm} a^2 &- x^2 \hspace{20mm} x=a\sin\theta \hspace{5mm} or \hspace{5mm} x=a\cos\theta\\
+\hspace{30mm} x^2 &- a^2 \hspace{20mm} x=a \mathrm{cosec}\theta \hspace{3mm} or \hspace{5mm} x=a\sec\theta \\
+\hspace{25mm}\sqrt{\frac{a-x}{a+x}} \hspace{3mm} & or \hspace{3mm}\sqrt{\frac{a+x}{a-x}} \hspace{8mm} x=a\cos2\theta \hspace{5mm}\\
+\hspace{25mm}\sqrt{\frac{a^2-x^2}{a^2+x^2}} \hspace{3mm} & or \hspace{3mm}\sqrt{\frac{a^2+x^2}{a^2-x^2}} \hspace{6mm} x=a^2\cos2\theta \hspace{5mm}
+\end{align*}
