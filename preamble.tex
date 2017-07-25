@@ -3,15 +3,17 @@
 
 % Instructions:
 
-% # Uncomment those packages which are required
-% # Comment those packages which are not required or are
-%   causing conflicts
+% # Uncomment those packages which are required.
+% # Comment packages which are not required.
+% # [] - signifies optional arguments
+% # {} - compulsory arguments
 
 %----------------------------------------------------------------------------------------
 %	LAYOUT AND FORMATTING
 %----------------------------------------------------------------------------------------
 
 % Page margins and layout
+
 %\usepackage[a4paper,top=3cm,bottom=3cm,left=1.5cm,right=3cm,bindingoffset=1cm]{geometry}  
 
 \usepackage[a4paper,top=2cm,bottom=3cm,inner=1.5cm,outer=3cm,bindingoffset=1cm]{geometry} 
@@ -25,7 +27,24 @@
 %for inserting fancy headers and footers
 \usepackage{fancyhdr} 
 
-\usepackage{titletoc} % Required for manipulating the table of contents
+% Required for formatting table of contents
+\usepackage{titletoc} 
+
+% Required for formatting section headings
+\usepackage{titlesec}
+
+% Required for formatting list of tables and figures
+\usepackage{tocloft}
+
+% Caption and sub-caption properties
+%\usepackage{caption}
+%\usepackage{subcaption}
+
+% Packages for controlling line spacing
+\usepackage{setspace}
+
+%Package for author details
+\usepackage{authblk}
 
 %----------------------------------------------------------------------------------------
 %	FONTS
@@ -55,7 +74,7 @@
  
  
 %----------------------------------------------------------------------------------------
-%	GRAPHICS AND IMAGES
+%	GRAPHICS AND TABLES
 %----------------------------------------------------------------------------------------
 
 % Required for enhanced graphics support
@@ -67,24 +86,51 @@
 % Required for drawing custom shapes
 \usepackage{tikz} 
 
+%For tabular options
+\usepackage{array}
+
+%Automatically adjust table width
+%\usepackage{tabularx}
+
+%Merging multiple rows
+\usepackage{multirow}
+
+%Controlling spacing within tables
+\usepackage{booktabs}
+
+%Formatting table properties
+%\usepackage{threeparttable}
+
+%Formatting table style
+%\usepackage{longtable}
+
+%To change table orientation to landscape mode
+%\usepackage{lscape}
+
+%Increase row height in LaTeX table
+\setlength\extrarowheight{25pt}
+
+%Baseline width modification 
+%\setlength\baselineskip{5pt}
+
 %----------------------------------------------------------------------------------------
 %	HYPERLINKS IN THE DOCUMENTS
 %----------------------------------------------------------------------------------------
 \usepackage{hyperref}
-\usepackage{url}
+\usepackage{cleveref}
+%\usepackage{url}
 
 %----------------------------------------------------------------------------------------
 %	MATHEMATICS
 %----------------------------------------------------------------------------------------
-
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
 \usepackage{amsfonts}
-
 %----------------------------------------------------------------------------------------
 %	BIBLIOGRAPHY SUPPORT
 %----------------------------------------------------------------------------------------
+%Use either of the two
 
 %\usepackage{natbib}
 %\usepackage{biblatex}
@@ -103,4 +149,12 @@
 %----------------------------------------------------------------------------------------
 %	NOTES AND DOCUMENTATION
 %----------------------------------------------------------------------------------------
+%Package for notes
 %\usepackage{todonotes}
+
+%Package for footnote style
+%\usepackage{footmisc}
+
+%Package for glossaries
+%\usepackage{glossaries}
+
