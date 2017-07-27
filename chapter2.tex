@@ -10,7 +10,7 @@ where \(a,b\) and \(c\) are constants and \(a \neq 0\), has two solutions for th
 
 \begin{equation}
 \label{root}
-x_{1,2} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+x_{\alpha,\beta} = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 \end{equation}
 
 If the \emph{discriminant} \( \Delta \) with 
@@ -30,11 +30,28 @@ x = \frac{-b}{2a}
 \textbf{Sum of the roots}:
 \begin{equation}
 \label{sum_root}
-x1 + x2 = \frac{-b}{a}
+\alpha + \beta = \frac{-b}{a}
 \end{equation}
 
 \textbf{Product of the roots}:
 \begin{equation}
 \label{product_root}
-x1.x2 = \frac{c}{a}
+\alpha.\beta = \frac{c}{a}
 \end{equation}
+
+\subsection{Factorization method}
+Find the two factors $x-\alpha$ and $x-\beta$ which when multiplied produce the quadratic equation $ax^2+bx+c$. 
+
+\subsection{Completion of squares method}
+Consider any quadratic equation of the form $ax^2+bx+c = 0$. Dividing throughout by a.
+\begin{align*}
+\implies x^2+ \left(\frac{b}{a}\right) x +\frac{c}{a} &=0\\
+\text{Adding and subtracting} &\left(\frac{b}{2a}\right)^{2}&,\\
+x^2 + \left(\frac{b}{a}\right)x + \left(\frac{b}{2a}\right)^{2} - \left(\frac{b}{2a}\right)^{2} + \frac{c}{a} &=0\\
+\end{align*}
+
+\begin{align*}
+\left(x + \frac{b}{2a} \right)^{2} + \frac{c}{a} - \left(\frac{b}{2a}\right)^{2} &=0\\
+\therefore ax^2+bx+c = 0 \implies a(x+d)^{2} + e &=0 \quad \text{where},\quad
+d =\frac{b}{2a} \quad \text{and} \quad e = \frac{c}{a} - \left(\frac{b}{2a}\right)^{2}.
+\end{align*}

@@ -1,52 +1,64 @@
-\section{Linear Inequalities}
+\section{Polynomial Functions}
 
-\begin{spacing}{0.5}
+\noindent
+\textbf{Zeros of a polynomial:}{ }If $f(c) = 0$, then $c$ is called a zero of the polynomial $f(x)$. \\
 
-Inequalities of the form: \\
-%\vspace{1mm}
-%\vspace{0.1\baselineskip}
-\[ax + b < 0\] \\
-%\vspace{1mm}
-%\vspace{0.01\baselineskip}
-\[ax + b > 0\] \\
-%\vspace{1mm}
-%\vspace{0.01\baselineskip}
-\[ax + b \leq 0\] \\
-%\vspace{1mm}
-%\vspace{0.01\baselineskip}
-\[ax + b \geq 0\] \\
-%\vspace{1mm}
-%\vspace{0.01\baselineskip}
-are known as linear inequalities.
-%\vspace{1mm}
-%\vspace{0.01\baselineskip}
+\noindent
+\textbf{Division algorithm for a polynomial:}{ }If $f(x)$ and $g(x)$ are two polynomials such that $g(x)\neq0$ then there exist two unique polynomials $q(x)$ and $r(x)$ such that: \\
+
+\noindent
+\begin{tcolorbox}
+\begin{align}
+\frac{f(x)}{g(x)} = q(x) + \frac{r(x)}{g(x)}
+\end{align}
+\end{tcolorbox}
+
+\noindent
+\textbf{Fundamental Theorem of Algebra:}{ }Every polynomial with positive degree has at least one complex zero. \\
+
+\noindent
+\textbf{Remainder Theorem:}{ }If a polynomial $f(x)$ is divided by $x-c$ then the remainder is $f(c)$. \\
+
+\noindent
+\textbf{Factor Theorem:}{ }Polynomial $f(x)$ has a factor $x-c$ if and if only $f(c) = 0$.
+
+\subsection{Corollary to the Fundamental Theorem}
+\begin{enumerate}
+\item Every polynomial of positive degree $n$ has a factorization of the form:
+
+\begin{tcolorbox}
+\begin{align}
+P(x) = a_n (x-r_1)(x-r_2).........(x-r_n)
+\end{align}
+\end{tcolorbox}
+
+where $r_i$ are not necessarily distinct. If $(x-r_i)$ occurs $n$ times it is said to have a multiplicity of $n$.
+
+\item It is not always possible to find the factors using exact methods.
+
+\item A polynomial of degree $n$ has at most $n$ complex zeros.
+
+\item Complex zeros of real polynomials with real coefficients occur in complex conjugate pairs.
+
+\item Any polynomial of degree $n>0$ with real coefficients has complete factorization using linear and quadratic factors, multiplied by the leading coefficient of the polynomial.
+
+\item \textbf{Intermediate Value Theorem}: Given a polynomial $f(x)$ with $a<b$ and $f(a) \neq f(b)$ then $f(c)$ takes on every value $c$ in the interval $(a,b)$.
+
+\item For a polynomial $f(x)$ if $f(a)$ and $f(b)$ have opposite signs then $f(x)$ has at least one zero between $a$ and $b$.
+
+\item For a polynomial $f(x)$ if $f(a)$ and $f(b)$ have opposite signs then $f(x)$ has at least one zero between $a$ and $b$.
+
+\item \textbf{Descartes rule of signs}: If $f(x)$ is a polynomial with terms arranged in descending order, then the number of positive real roots of $f(x)$ is either equal to the number of sign changes between the successive terms of $f(x)$ or less than this number by an even number. Number of negative real zeros of $f(x)$ is obtained by applying this rule to $f(-x)$.
+
+\end{enumerate}
+
+\subsection{Synthetic Division}
+
+$c$ is said to be a zero of the polynomial $f(x)$ if $f(c) = 0$ $\implies$ $x-c$ is a factor of the polynomial $f(x)$. The graph of $f(x)$ has an intercept at $c$.
 
 \begin{enumerate}
-\item Add and subtract any number $k$ without change in the inequality on both sides.
-\item When multiplying or dividing by constant $k$, reverse the sign of the inequality only when $k$ is negative.
-\item Linear inequalities have infinite solution sets, these can be obtained by isolating the variable and solving them in a manner similar to solving equations.\\ \\
-\end{enumerate}
-\end{spacing}
+\item Arrange the coefficients in descending order in the first row.
 
-\centering
-\begin{tabular}{|c|c|>{\centering\arraybackslash}p{0.5\textwidth}|}
-\hline 
-Inequality & Representation & Graph \\ 
-\hline 
-$ a < x < b$ & (a,b) &  \\ 
-\hline 
-$ a \leq x \leq b $ & $ [a,b] $ &  \\ 
-\hline 
-$ a < x \leq b $ & $ (a,b] $ &  \\ 
-\hline 
-$ a \leq x < b $ & $ [a,b) $ &  \\ 
-\hline 
-$ x > a $ & $ (a,\infty) $ &  \\ 
-\hline 
-$ x \geq a $ & $ [a,\infty) $ &  \\ 
-\hline 
-$ x < b $ & $ (-\infty,b) $ &  \\ 
-\hline 
-$ x \leq b $ & $ (-\infty,b] $ &  \\ 
-\hline 
-\end{tabular} 
+\item Third row is formed by bringing down the first coefficient of $f(x)$ then successively multiplying each coefficient in the third row by $c$, placing the results in second row adding this to the corresponding coefficients in the first row, and placing result in the next position of the third row.
+\end{enumerate}
+ 
