@@ -1,0 +1,74 @@
+\section{Limits and Differentiation}
+\subsection{Fundamental principles of limits}
+\begin{enumerate}
+\item The limit may exist at a point even if the function is undefined.
+\item If a function $f(x)$ is defined at a point $a$ i.e. $f(a)$ exists, it is not necessary that the limit at $a$ must exist. Moreover, even if the limit exists it need not be equal to $f(a)$.
+\item \textbf{Indeterminate forms:} Any function assuming either of these forms is said to be indeterminate - $\frac{0}{0}, 0.\infty,\frac{\infty}{\infty},\infty - \infty, 0^0, 1^\infty, \infty^0$.
+\end{enumerate}
+
+\vspace{-5mm}
+
+\subsection{Properties}
+\vspace{-1mm}
+\begin{align*}
+&\lim_{x \to a} [f(x) \pm g(x)] = \lim_{x \to a} f(x) \pm \lim_{x \to a} g(x).\\
+&\lim_{x \to a} [f(x).g(x)] = \lim_{x \to a} f(x).\lim_{x \to a} g(x).\\
+&\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)} \quad \text{provided} \, \lim_{x \to a} g(x) \neq 0.
+\end{align*}
+
+\vspace{-5mm}
+
+\subsection{Standard Limits}
+\vspace{-1mm}
+\begin{align}
+&\lim_{x \to 0} \sin x = 0 \\
+&\lim_{x \to 0} \tan x = 0 \\
+&\lim_{x \to 0} \cos x = 1 \\
+&\lim_{x \to 0} \frac{\sin x}{x} = 1 \\
+&\lim_{x \to 0} \frac{\tan x}{x} = 1 \\
+&\lim_{x \to 0} \frac{\sin^{-1} x}{x} = 1 \\
+&\lim_{x \to 0} \frac{\tan^{-1} x}{x} = 1 \\
+&\lim_{x \to 0} \frac{a^x - 1}{x} = \ln a \quad \text{where} \hspace{2mm} a>0\\
+&\lim_{x \to 0} \frac{e^x - 1}{x} = 1 \\
+&\lim_{x \to 0} \frac{\log_a (1+x)}{x} = \log_a e \quad \text{where} \hspace{2mm} a>0 \hspace{2mm} \text{and} \hspace{2mm} a\neq0
+\end{align}
+
+\vspace{-2mm}
+
+\begin{align}
+&\lim_{x \to 0} \frac{\ln (1+x)}{x} = 1 \\
+&\lim_{x \to 0} \frac{\log x}{x^m} = 0 \quad \text{where} \hspace{2mm} m>0 \\
+&\lim_{x \to 0} \frac{(1+x)^m - 1}{x} = m \\
+&\lim_{x \to 0} \frac{x^n - a^n}{x-a} = n.a^{n-1}
+\end{align}
+
+\subsection{Dealing with indeterminate forms}
+If $f(x)$ and $g(x)$ are two functions such that $f(x)\rightarrow 0$ as $x \rightarrow a$ and $g(x) \rightarrow \infty$ as $x \rightarrow a$ such that $[1+f(x)]^{g(x)}$ assumes the form $1^\infty$ then:
+
+\begin{tcolorbox}
+\begin{center}
+\begin{align*}
+\lim_{x \to a}{[1+f(x)]}^{g(x)} = {e} ^ {\lim_{x \to a} f(x) . g(x)} 
+\end{align*}
+\end{center}
+\end{tcolorbox} 
+
+\subsection{L'Hospital's Rule}
+L'Hospital's rule states that for functions $f(x)$ and $g(x)$ which are differentiable on an open interval $I$ except possibly at a point $c$ contained in $I$, if:
+
+\vspace{5mm}
+
+\noindent
+$ \lim_{x \to c} f(x) = \lim_{x \to c} g(x) = 0$ or $\pm \infty $ and $g^{'}(x)\neq 0$ for all $x$ in $I$ with $x \neq c$ and \\
+
+\noindent
+$\lim_{x \to a} \frac{f^{'}(x)}{g^{'}(x)}$ exists then:
+
+
+\begin{tcolorbox}
+\begin{center}
+\begin{align*}
+\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f^{'}(x)}{g^{'}(x)}
+\end{align*}
+\end{center}
+\end{tcolorbox} 
