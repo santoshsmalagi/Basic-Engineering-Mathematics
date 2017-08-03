@@ -73,3 +73,27 @@ $ \displaystyle \int f(x).dx = \int f(\phi(t)).\phi'(t).dt \quad \text{where} \:
 
 \noindent
 \textit{Integral of a function f(ax+b) is of the same form as that of f(x), divided by the coefficient of x.}
+
+\vspace{5mm}
+\noindent
+\textbf{Summary}
+
+\vspace{2mm}
+
+\begin{tcolorbox}
+\begin{center}
+$ \int \frac{f'(x)}{f(x)}.dx = \log{f(x)} $ \\
+$ \int [f(x)]^n f'(x).dx = \frac{[f(x)]^{n+1}}{n+1} $ \\
+$ \int f'(ax+b)dx = \frac{1}{a}.{f(ax+b)} $
+\end{center}
+\end{tcolorbox}
+
+\subsection{Integration of Trigonometric Functions}
+\begin{align*}
+&\int \sin x.dx = -\cos x + c \\[2mm]
+&\int \cos x.dx = \sin x + c \\[2mm]
+&\int \tan x.dx = -\log |\cos x| + c = \log |\sec x| + c \\[2mm]
+&\int \cot x.dx =  \log |\sin x| + c =  -\log |\mathrm{cosec} x| + c \\[2mm]
+&\int \sec x.dx = \log |\sec x + \tan x| + c = \log \tan \left[\frac{\pi}{4} + \frac{x}{2} \right] \\[2mm]
+&\int \mathrm{cosec} x.dx = \log |\mathrm{cosec}x - \cot x| + c = \log \tan \frac{x}{2}
+\end{align*}
