@@ -1,1 +1,75 @@
 \section{Indefinite Integrals}
+
+Evaluation of indefinite integrals can be accomplished using one of the possible methods: \\[2mm]
+
+\begin{itemize}
+\item Decomposition of given integral into sum of integrals which can be reduced using standard formulas.
+
+\item Integration by substitution
+
+\item Integration by parts
+
+\item Integration by successive reduction
+
+\end{itemize}
+
+\subsection{Integration by substitution}
+If $f(x)$ is a function such that $x$ can be substituted as $ x = \phi(t) $, then: \\[2mm]
+
+\begin{tcolorbox}
+\begin{center}
+$ \displaystyle \int f(x).dx = \int f(\phi(t)).\phi'(t).dt \quad \text{where} \: x = \phi(t) $
+\end{center}
+\end{tcolorbox}
+
+\vspace{2mm}
+
+\textbf{Proof:}
+\noindent
+\begin{align*}
+&v = \int f(x).dx = \int f(\phi(t)) \: \text{substituting} \: x = \phi(t) \\
+&\frac{dv}{dx} = f(x) \\
+&\frac{dv}{dt} = \frac{dv}{dx}.\frac{dx}{dt} \\
+&\Rightarrow \frac{dv}{dt} = \frac{dv}{dx}.\frac{dx}{dt} = f(x).\frac{dx}{dt} \\
+&\text{Integrating both sides w.r.t we get} \: t \\
+&v = \int f(x).\frac{dx}{dt} = \int f(\phi(t)).\phi'(t).dt for  \: x = \phi(t) \\
+\end{align*}
+
+\subsubsection{$ \mathbf{\int \frac{f'(x)}{f(x)}.dx = \log{f(x)}} $}
+
+\noindent
+\textbf{Proof:}
+\begin{align*}
+&\text{Let} \: f(x) = t \\
+&f'(x) = \frac{dt}{dx} \\
+&f'(x).dx = dt \\
+&\therefore \int \frac{f'(x)}{f(x)}dx = \int \frac{dt}{t} = \log t = \log f(x) \\
+\end{align*}
+
+\noindent
+\textit{Integral of a fraction whose numerator is the derivative of the denominator is equal to the logarithm of the denominator.}
+
+
+\subsubsection{$ \mathbf{\int [f(x)]^n f'(x).dx = \frac{[f(x)]^{n+1}}{n+1}}$ , such that n $\neq$ 0}
+
+\noindent
+\textbf{Proof:}
+\begin{align*}
+&\text{Let} \: f(x) = t \\
+&f'(x)dx = dt \\
+&\therefore \int [f(x)]^n.f'(x)dx = \int t^n.dt = \frac{t^{n+1}}{n+1} = \frac{[f(x)]^{n+1}}{n+1} \\ 
+&\text{for n} \neq -1
+\end{align*}
+
+\subsubsection{$ \mathbf{\int f'(ax+b)dx = \frac{f(ax+b)}{a}}$}
+\noindent
+\textbf{Proof:}
+\begin{align*}
+&\text{Let} \: ax+b = t \\
+&adx = dt \implies \\
+&\therefore \int [f(x)]^n.f'(x)dx = \int t^n.dt = \frac{t^{n+1}}{n+1} = \frac{[f(x)]^{n+1}}{n+1} \\ 
+&\text{for n} \neq -1
+\end{align*}
+
+\noindent
+\textit{Integral of a function f(ax+b) is of the same form as that of f(x), divided by the coefficient of x.}
