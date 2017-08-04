@@ -97,3 +97,102 @@ $ \int f'(ax+b)dx = \frac{1}{a}.{f(ax+b)} $
 &\int \sec x.dx = \log |\sec x + \tan x| + c = \log \tan \left[\frac{\pi}{4} + \frac{x}{2} \right] \\[2mm]
 &\int \mathrm{cosec} x.dx = \log |\mathrm{cosec}x - \cot x| + c = \log \tan \frac{x}{2}
 \end{align*}
+
+\subsection{Standard Integrals}
+\begin{align*}
+&\int \frac{1}{a^2+x^2}.dx = \frac{1}{a}.\tan^{-1} {\frac{x}{a}} + c = -\frac{1}{a}.\cot^{-1} {\frac{x}{a}} + c \\[3mm]
+&\int \frac{1}{x^2-a^2}.dx = \frac{1}{2a}.\log\left|\frac{x-a}{x+a}\right|+c\\[3mm]
+&\int \frac{1}{a^2-x^2}.dx = \frac{1}{2a}.\log\left|\frac{a+x}{a-x}\right|+
+c \\[6mm]
+&\int \frac{1}{\sqrt{a^2-x^2}}.dx = \sin^{-1}\frac{x}{a}+c = -\cos^{-1}\frac{x}{a}\\[3mm]
+&\int \frac{1}{\sqrt{a^2+x^2}}.dx = \sinh^{-1}\frac{x}{a}+c = \log \frac{x+\sqrt{x^2+a^2}}{a}\\[3mm]
+&\int \frac{1}{\sqrt{x^2-a^2}}.dx = \cosh^{-1}\frac{x}{a}+c = \log \frac{x+\sqrt{x^2-a^2}}{a}\\[6mm]
+&\int\sqrt{a^2-x^2}.dx = \frac{1}{2}x.\sqrt{a^2-x^2}+\frac{a^2}{2}\sin^{-1}\frac{x}{a}+c \\[3mm]
+&\int\sqrt{a^2+x^2}.dx = \frac{1}{2}x.\sqrt{a^2+x^2}+\frac{a^2}{2}\log\frac{x+\sqrt{x^2+a^2}}{a}+c \\[3mm]
+&\int\sqrt{x^2-a^2}.dx = \frac{1}{2}x.\sqrt{x^2-a^2}-\frac{1}{2}.a^2.\log\frac{x+\sqrt{x^2-a^2}}{a} \\[6mm]
+&\textbf{Corollary:} \\[2mm]
+&\sinh^{-1}\frac{x}{a} = \log\frac{x+\sqrt{x^2+a^2}}{a} \\[3mm]
+&\cosh^{-1}\frac{x}{a} = \log\frac{x+\sqrt{x^2-a^2}}{a}
+\end{align*}
+
+\subsection{Integration by Parts}
+If $u$ and $v$ are two functions of x then: \\
+\begin{tcolorbox}
+\begin{center}
+$ \int u.v.dx = u.\int v.dx - \int\frac{du}{dx}.\left[\int v.dx \right].dx $
+\end{center}
+\end{tcolorbox}
+
+\vspace{2mm}
+
+\noindent
+\textbf{\textit{If no second function is available unity is taken as the second function.}}
+
+\begin{tcolorbox}
+\begin{center}
+\textbf{\textit{Integral of Product of two functions = First Function x Integral of Second Function - Integral of [Differential of First function x Integral of Second Function] }}
+\end{center}
+\end{tcolorbox}
+
+\vspace{5mm}
+
+\noindent
+\textit{Criteria for choosing first and second function : \textbf{ILATE}}
+\begin{itemize}
+\item \textit{I:Inverse Trigonometric Function}
+\item \textit{L:Logarithmic Function}
+\item \textit{A:Algebraic Function}
+\item \textit{T:Trigonometric Function}
+\item \textit{E:Exponential Function}
+\end{itemize}
+
+\vspace{-2mm}
+
+\subsection{Bernoulli's Theorem}
+
+$ \displaystyle \int u.v.dx \rightarrow u $ is an algebraic function which becomes zero after differentiating for finite steps then: 
+
+\vspace{2mm}
+
+\begin{tcolorbox}
+\begin{center}
+$ \int u.v.dx = u \int v.dx - u'\int\int v.dx + u''\int\int\int v.dx.............$
+\end{center}
+\end{tcolorbox}
+
+\vspace{2mm}
+\noindent
+Example: \\
+\begin{align*}
+&\int {x^2}\cos x.dx = x^2 \int cos x - 2.x \int \int \cos x + 2 \int \int \int cos x \\
+& x^2.sin x + 2x \cos x - 2 \sin x
+\end{align*}
+
+\subsection{Evaluation of Integrals using $ e^x $}
+\subsubsection{$ \mathbf{\int e^x[f(x) + f'(x)].dx} $}
+Integrating by parts, \\
+\begin{align*}
+&\int e^xf(x).dx = e^xf(x) - \int e^x f'(x)dx \\
+&\text{Now} \int e^x[f(x)+f'(x)].dx = \int e^xf(x).dx + \int e^xf'(x)dx \\
+&\text{We get} 
+\end{align*}
+\vspace{1mm}
+\begin{tcolorbox}
+\begin{center}
+$ \mathbf{\int e^x[ f(x) + f'(x) ].dx = e^x.f(x)} $
+\end{center}
+\end{tcolorbox}
+\subsubsection{$ \mathbf{\int e^{ax}\cos(bx+c)} $}
+\begin{tcolorbox}
+\begin{center}
+$ \int e^{ax} \cos (bx+c).dx = \frac{e^{ax}}{a^2+b^2}.(a \cos (bx+c)+ b \sin (bx+c))
+= \frac{e^{ax} \cos \left( bx+c - \tan^{-1}\frac{b}{a} \right)}{\sqrt{a^2+b^2}} $
+\end{center}
+\end{tcolorbox}
+\subsubsection{$ \mathbf{\int e^{ax}\sin(bx+c)} $}
+\begin{tcolorbox}
+\begin{center}
+$ \int e^{ax} \sin (bx+c).dx = \frac{e^{ax}}{a^2+b^2}.(a \sin (bx+c) - b \cos (bx+c))
+= \frac{e^{ax} \sin \left( bx+c - \tan^{-1}\frac{b}{a} \right)}{\sqrt{a^2+b^2}} $
+\end{center}
+\end{tcolorbox}
